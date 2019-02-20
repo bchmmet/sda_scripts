@@ -5,7 +5,8 @@ sum=0
 for i in $numbers
 do
 	cat $1
-	sum=sum+i
+	sum=(( $sum+i ))
+
 done
 
 echo $sum

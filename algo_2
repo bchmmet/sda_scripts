@@ -1,0 +1,18 @@
+#! /bin/bash
+read n
+while [[ $n -lt 0 ]]
+do
+	read n
+done
+licznik=0
+silnia=1
+
+while [[ $licznik -ne $n ]]
+do
+	licznik=$(( $licznik+1 ))
+	silnia=$(( $silnia*$licznik ))
+done
+echo $silnia
+
+
+
